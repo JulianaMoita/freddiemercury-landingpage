@@ -1,0 +1,83 @@
+.biografia{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.biografia-conteudo h1,
+.biografia-conteudo h2,
+.biografia-conteudo p{
+  text-align: end;
+}
+
+.biografia-conteudo-1{
+  padding: 50px 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.biografia-conteudo-1 h2,
+.biografia-conteudo-1 p {
+  max-width: 90%;
+  align-self: self-end;
+}
+
+.biografia-conteudo-2{
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  
+  align-items: center;
+}
+
+.biografia-conteudo-2 img{
+  grid-column: 1;
+  grid-row: 1/3;
+
+  min-width: 350px;
+  min-height: 450px;
+
+  border: 12px solid #fff;
+  border-bottom: 40px solid #fff;
+  box-shadow: 5px 5px 45px 20px rgba(0,0,0,0.4);
+  margin-left: -100px;
+}
+
+.biografia-conteudo-2 p{
+    grid-column: 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    max-width: 100%;
+}
+
+/*--------RESPONSIVO----------*/
+
+
+@media (max-width: 1024px){
+  .biografia{
+    grid-template-columns: 1fr;
+  }
+  .biografia-poster img{
+    display: none;
+  }
+  .biografia-conteudo-1 h2{
+    max-width: 100%;
+    align-self: center;
+    text-align: center;
+  }
+  .biografia-conteudo-2{
+    grid-template-columns: 1fr 1fr;
+  }
+  .biografia-conteudo-2 img{
+    grid-column: 1;
+    grid-row: 1/2;
+
+    min-width: 350px;
+    min-height: 450px;}
+}
+
+/*
+- AJUSTAR POSICIONAMENTOS DOS GRIDS E TEXTOS
+- ESTILIZAR MELHOR A FOTO DO FRED. TA RUIM COMO POLAROID
+*/
+

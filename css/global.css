@@ -1,0 +1,75 @@
+/* Reset básico */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--cor-texto);
+  background-color: var(--cor-bg1);
+
+  margin: 0;
+  padding: 10px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-secao);
+}
+
+h1, h2, h3, h4{
+  font-family: league spartan;
+}
+
+h1{
+  font-family: anton;
+  font-size: clamp(8rem, -6.1509rem + 37.7358vw, 18rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: clamp(2rem, 1.1156rem + 2.3585vw, 2.625rem);
+}
+
+p{
+  font-family: league spartan;
+  font-weight: 100;
+  font-size: clamp(1rem, 0.6462rem + 0.9434vw, 1.25rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.titulo-responsivo{
+  display: none;
+}
+
+/* Variáveis de tema (cores, fontes, espaçamentos) */
+:root {
+  --cor-primaria: #a3211d;   /* vermelho estilo Queen */
+  --cor-bg1: #000;
+  --cor-bg2: #252626;
+  --cor-bg3: #f5f5f5;
+  --cor-texto: #f5f5f5;
+  --espaco-secao: 7rem;
+}

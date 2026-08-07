@@ -1,0 +1,75 @@
+.banner {
+  position: relative;
+}
+
+.banner-capa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-capa h1 {
+  z-index: 1;
+}
+
+.banner-capa img {
+  z-index: 2;
+  margin-top: -500px;
+  margin-bottom: -130px;
+  height: 160vh;
+  width: auto;
+  object-fit: cover;
+}
+
+.banner-conteudo {
+  width: 150px;
+  position: absolute;
+  bottom: 350px;
+  right: 0;
+}
+
+.banner-conteudo p {
+  text-align: end;
+}
+
+
+/*--------RESPONSIVO----------*/
+
+
+@media (max-width: 1024px) {
+  .banner-capa img {
+    height: 100vh;
+    margin-top: -360px;
+  }
+  .banner-conteudo{
+    bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner {
+    padding: 20px;
+  }
+  .banner-capa h1{
+    display: none;
+  }
+  .titulo-responsivo{
+    display: block;
+    text-align: center;
+  }
+  .banner-conteudo {
+    width: 100vw;
+    bottom: -80px;
+    right: 0;
+    padding: 10px;
+  }
+  .banner-conteudo p {
+    text-align: center;
+  }
+}
+
+/*
+- TEM ALGUMA COISA ERRADA COM O TITULO-RESPONSIVO QUE TA SUMINDO TUDO ABAIXO DE 600PX
+- PRECISO AJUSTAR A CENTRALIZAÇÃO DO P DO BANNER NO MOBILE. TA SUMINDO PRA ESQUERDA
+*/
